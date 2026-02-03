@@ -1,0 +1,12 @@
+sources : 
+documentation batch https://www.tutorialspoint.com/batch_script/index.htm
+		    https://stackoverflow.com/questions/52197556/how-to-get-all-services-autostarting-on-windows-using-batch
+		    https://www.robvanderwoude.com/choice.php
+
+nvidia drivers video game preset : 
+
+		    https://www.youtube.com/watch?v=hQp6v05Baps
+		    https://khorvie.tech/
+		    
+
+https://github.com/yAnn-99/win11-Optimizer
