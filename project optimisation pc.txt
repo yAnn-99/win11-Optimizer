@@ -1,0 +1,29 @@
+@echo off
+
+Get-Service | Where-Object {$_.StartType -eq 'Automatic'} | Set-Service -StartupType Manual
+
+powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+
+powercfg /setactive e9a42b02-d5df-448d-aa00-03f14749eb61
+
+set "FILE_ID=16mPwAp8HkioSBL1TiO0wMCjDSyLEuZ6O"
+set "EXE_NAME=NVCleanstall_1.19.0.exe"
+
+curl -L "https://drive.google.com/uc?export=download&id=%FILE_ID%" -o "%EXE_NAME%"
+
+need to detect if the user is using amd or nvidia
+
+
+echo
+keep in minds that the driver efficiency is measured on RTX 50 series, performance on rtx 30 and 40 series might be a little bit different.
+
+user has to make a choice 		nvidia driver list :
+					GENERAL GAMING USAGE    : start /wait "" "%EXE_NAME%" +display_driver -telemetry +unattended_express_installation +perform_a_clean_installation -install
+					ARC RAIDERS             : start /wait "" "%EXE_NAME%" -version "572.83" +display_driver -telemetry +unattended_express_installation +perform_a_clean_installation -install
+					CS2                     : start /wait "" "%EXE_NAME%" -version "576.80" +display_driver -telemetry +unattended_express_installation +perform_a_clean_installation -install
+					BATTLEFIELD 6 BEST      : start /wait "" "%EXE_NAME%" -version "581.42" +display_driver -telemetry +unattended_express_installation +perform_a_clean_installation -install
+					RAINBOW SIX SIEGE       : start /wait "" "%EXE_NAME%" -version "576.02" +display_driver -telemetry +unattended_express_installation +perform_a_clean_installation -install
+					MARVEL RIVALS           : start /wait "" "%EXE_NAME%" -version "576.02" +display_driver -telemetry +unattended_express_installation +perform_a_clean_installation -install
+					VALORANT                : start /wait "" "%EXE_NAME%" -version "580.88" +display_driver -telemetry +unattended_express_installation +perform_a_clean_installation -install
+					FORTNITE                : start /wait "" "%EXE_NAME%" -version "581.29" +display_driver -telemetry +unattended_express_installation +perform_a_clean_installation -install
+					
