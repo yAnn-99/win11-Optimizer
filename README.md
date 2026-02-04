@@ -18,4 +18,4 @@ Refer to onlines benchmarks for driver justification but each button does a clea
         VALORANT                : "580.88"
         FORTNITE                : "581.29"
 
-**keep in mind that those drivers were tested on RTX 50 series, on previous series the result might differ a little bit**
+*keep in mind that those drivers were tested on RTX 50 series, on previous series the result might differ a little bit*
